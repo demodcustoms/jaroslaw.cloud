@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.lego.com/cdn/cs/set/assets/bltb3966e7a5ea39649/76245.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title id="custom-title">J. C.</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div id="blurred-content">
+        <div class="wrapper">
+
+            <div class="navbar">
+                <div class="navbar-logo">
+                    <div class="image-container">
+                        <a href="#"><img src="https://www.lego.com/cdn/cs/set/assets/bltb3966e7a5ea39649/76245.png" alt="host Rider" class="original-image"></a>
+                    </div>
+                </div>
+            </div> 
+            
+            <div id="mySidenav" class="sidenav">
+                <a href="#" id="contact">Tryb ciemny</a>
+            </div>
+
+            <script>
+                var contactButton = document.getElementById("contact");
+                var isDarkMode = localStorage.getItem("isDarkMode") === "true";
+
+                updateDarkMode();
+
+                contactButton.addEventListener("click", function() {
+                isDarkMode = !isDarkMode;
+                updateDarkMode();
+                });
+
+                function updateDarkMode() {
+                if (isDarkMode) {
+                    document.body.style.backgroundColor = "#171717";
+                    document.querySelector(".navbar").style.backgroundColor = "#171717";
+                    contactButton.style.backgroundColor = "#666";
+                    contactButton.innerHTML = "Tryb jasny";
+                } else {
+                    document.body.style.backgroundColor = "rgb(255, 243, 227)";
+                    document.querySelector(".navbar").style.backgroundColor = "rgba(255, 243, 227, 0.89)";
+                    contactButton.style.backgroundColor = "#111";
+                    contactButton.innerHTML = "Tryb ciemny";
+                }
+
+                localStorage.setItem("isDarkMode", isDarkMode);
+                }
+              </script>
+
+            <section class="main">
+                <div class="container">
+                    <h1>
+                        <a href="store.html" class="page-transition-link"><div class="typewrite" id="underline" data-period="1500" data-type='["P. Jarosław Chmara to najlepszy nauczyciel w Polsce"]'></div></a>
+                    </h1>
+                </div>
+            </section>
+
+            <section class="aktualnosci">
+                <div class="heading">
+                    <h2>Galeria</h2>
+                </div>
+                <div class="container">
+                    <div class="galeria">
+                      <div class="galeriaContent">
+                        <div class="imgContainer">
+                          <img src="https://planetamarvel.net/wp-content/uploads/2023/01/Ghost-Rider-Movies-Nicolas-Cage.jpg" alt="Ghost Rider">
+                        </div>
+                        <div class="imgContainer">
+                          <img src="https://images.gram.pl/news/byap20220412161656075suli.jpg" alt="host Rider">
+                        </div>
+                        <div class="imgContainer">
+                          <img src="https://ipla.pluscdn.pl/dituel/cp/yu/yu6h3fmna55oh6oeo1ee3bwvfp5j3hef.jpg" alt="host Rider">
+                        </div>
+                        <div class="imgContainer">
+                          <img src="https://fwcdn.pl/webv/71/90/17190/z01.17190.4.jpg" alt="host Rider">
+                        </div>
+                        <div class="imgContainer">
+                          <img src="https://static.kino.de/bd/be/24/31b27846a68cb30767e2db36a1_cmUgMTYwMCAxMjAwIGMgbQNiZTMyNDZiN2ViYQ==_ghost-rider-2007-film-rcm1200x627u.jpg" alt="w6keup">
+                        </div>
+                        <div class="imgContainer">
+                          <img src="https://cdn1.naekranie.pl/media/cache/amp/2019/09/Ghost-rider-featured_5d89e10f7638c.jpeg" alt="host Rider">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+            </section>
+
+            <section class="about">
+                <div class="heading">
+                  <h2>Opowiastka</h2>
+                </div>
+                <div class="container">
+                  <div class="button-container">
+                    <button onclick="showContainer1()">Treść wulgarna</button>
+                    <button onclick="showContainer2()">Treść niewulgarna</button>
+                  </div>
+                  <div class="container1" style="display: none;">
+                    <p>Takie numery to nie tutaj :D</p>
+                    <!--<p>Ej, stary, muszę Ci opowiedzieć, co się w naszej szkole Rolniczak ostatnio odjebało. Wiesz, ten nasz nauczyciel, Jarosław Chmara, zwany też Chmarskim albo Chmurą, postanowił nas wszystkich zszokować. Przyjechał do szkoły w swoim jebanym, szarym Mitsubisi, ale co się okazało? Nie miał żadnych kurwa opon na tych jebanych felgach! A jak wjeżdżał na parking, to było słychać ten jebany pisk i widoczne iskry, jakbyśmy byli w piekle z Ghost Riderem!
+                      <br><br>
+                      Ale co dopiero było śmieszne, jak otworzył bagażnik, to z niego wyskoczył nasz kumplunio, Mateusz Walkoniak. Wiesz, ten gruby gość z przetłuszczonymi włosami? No właśnie on! Ale coś tam zaczął pierdolić w jakimś niezrozumiałym języku, jakby rzucał jakieś pojebane zaklęcia na nauczycielkę Zenobię Dąbrowską.
+                      <br><br>
+                      No ale największe jaja były, jak Chmarski wszedł do klasy. Miał taki dziki uśmiech na twarzy i rzucił nam tekstem: "Moi drodzy, za przebicie opon, krew się poleje!" Kurwa, jak on to powiedział, to cała sala zaczęła się śmiać jak pojebana. Ale wiesz, Zenobia Dąbrowska, ta stara wypierdalanka, już czekała z synem, który zarabia 40 tysięcy złotych na miesiąc, żeby nas wszystkich zajebać.
+                      <br><br>
+                      Powiem Ci, ten dzień był totalnym pojebem! Wszyscy się śmieliśmy jak pojebani, a Chmura stał tam z tym swoim dzikim uśmieszkiem na ryju. A Walkoniak cały czas pierdolił te swoje pierdolone zaklęcia.
+                      <br><br>
+                      Nie mogłem uwierzyć, że to się dzieje naprawdę. Tego dnia nie przestałem się śmiać nawet na chwilę. Ale wiesz co, stary? To takie chwilowe odskoczenie od codzienności, które na pewno zostanie w mojej pamięci na długo.</p>-->
+                  </div>
+                  <div class="container2" style="display: none;">
+                    <p>Dobra, muszę wam opowiedzieć, co się ostatnio działo w naszej szkole Rolniczak. Chmarski, nasz nauczyciel, postanowił zrobić coś naprawdę szalonego. Przyjechał do szkoły w swoim szarym Mitsubishi, ale co się okazało? Nie miał opon na felgach! Jak wjeżdżał na parking, to było słychać pisk i iskry, jakbyśmy byli na planie filmu Ghost Rider.
+                        <br><br>
+                        Ale to jeszcze nie wszystko. Jak tylko otworzył bagażnik, z niego wyskoczył nasz kolega Walkoniak. Wiecie, ten gruby chłopak z przetłuszczonymi włosami? No właśnie on. Ale zaczął coś bełkotać w obcym języku, prawdopodobnie udając, że rzuca jakieś zaklęcia na naszą nauczycielkę, Panią Dąbrowską.
+                        <br><br>
+                        Najbardziej jednak rozjebało nas, jak Chmarski wszedł do klasy. Miał szeroki uśmiech na twarzy i powiedział: "Moi drodzy, za przebicie opon, będzie się działo!". Wszyscy zaczęliśmy się śmiać, bo to brzmiało po prostu zabawnie. Ale Dąbrowska, nasza nauczycielka, już czekała wraz ze swoim synem, który jest grubo zarabiającym gościem, żeby nam wszystkim pokazać, gdzie raki zimują.
+                        <br><br>
+                        To był naprawdę niezwykły dzień. Cała sytuacja była tak absurdalna, że nie przestawaliśmy się śmiać. Chmarski stał tam z tym swoim uśmiechem na twarzy, a Walkoniak wciąż bełkotał swoje tajemnicze słowa.
+                        <br><br>
+                        Choć to wszystko było szalone, to w pewien sposób było to odskoczenie od naszej codzienności. Na pewno zapamiętam ten dzień na długo.</p>
+                  </div>
+                </div>
+              </section>
+              
+              <script>
+                function showContainer1() {
+                  var container1 = document.querySelector('.container1');
+                  var container2 = document.querySelector('.container2');
+                  container1.style.display = 'block';
+                  container2.style.display = 'none';
+                }
+              
+                function showContainer2() {
+                  var container1 = document.querySelector('.container1');
+                  var container2 = document.querySelector('.container2');
+                  container1.style.display = 'none';
+                  container2.style.display = 'block';
+                }
+              </script>
+              
+
+        </div>
+    </div>
+
+</body>
+
+</html>

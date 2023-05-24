@@ -31,6 +31,60 @@ body {
     background-color: rgb(255, 243, 227);
 }
 
+#loginForm {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 4px;
+  }
+  
+  #loginForm label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #loginForm input[type="text"],
+  #loginForm input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ff5511;
+    border-radius: 4px;
+  }
+  
+  #loginForm button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff5511;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #loginForm button:hover {
+    background-color: #6d1f00;
+  }
+  
+  #loginForm button:active {
+    background-color: #6d1f00;
+  }
+  
+  #loginForm button[type="submit"] {
+    background-color: #ff5511;
+    float: right;
+  }
+  
+  #loginForm button[type="submit"]:hover {
+    background-color: #6d1f00;
+  }
+  
+  #loginForm button[type="submit"]:active {
+    background-color: #6d1f00;
+  }
+  
+
 .wrapper {
     width: 100%;
     display: flex;
@@ -110,7 +164,6 @@ button {
   
   button:hover {
     background-color: #ff5511;
-    filter: drop-shadow(0 0 10px #ff5511);
   }
   
   button:focus {
@@ -135,11 +188,11 @@ button {
 .container1,
 .container2 {
     display: none;
-    text-align: center;
+    width: 70%;
 }
-  
-.about .container p {
-    font-size: x-large;
+
+.about {
+    margin-bottom: 7vh;
 }
   
 .galeria {
@@ -194,6 +247,10 @@ h1 {
     margin: 0 auto;
     max-width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about .container2 p {
+    font-size: 16px;
 }
 
 .main {
