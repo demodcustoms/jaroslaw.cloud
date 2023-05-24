@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    cursor: url('img/cursor/kursor.png') 0 0, auto;
+}
+
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-thumb {
+    width: 10px;
+    border-radius: 13px;
+    background-clip: padding-box;
+    border: 4px solid transparent;
+}
+
+*::-webkit-scrollbar-thumb {        
+    box-shadow: inset 0 0 0 10px;
+    color: rgb(255, 243, 227);
+}
+
+body {
+    background-color: rgb(255, 243, 227);
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+}
+
+.navbar-logo img {
+    max-width: 160px;
+    height: auto;
+    cursor: url('img/cursor/kursor2.png') 0 0, auto;
+    transition: 0.5s;
+    display: block; /* dodana właściwość */
+    margin: 0 auto; /* dodana właściwość */
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    text-align: center; /* dodana właściwość */
+}
+
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .hover-image {
+    opacity: 1;
+    filter: drop-shadow(0 0 10px #9e40ff);
+}
+
+section {
+    color: #9e40ff;
+    font-family: 'Kilo';
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+section .heading {
+    margin-bottom: auto;
+}
+
+section .container {
+    flex-grow: 1; /* dodana właściwość */
+    height: 100%; /* dodana właściwość */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.galeriaContent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.galeriaContent img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+
+
+h1 {
+    text-align: center;
+    margin: 0 auto; /* Wyśrodkowanie h1 w poziomie */
+    max-width: 100%; /* Maksymalna szerokość h1 */
+}
+
+.about h1 {
+    text-align: center;
+    margin: 0 auto; /* Wyśrodkowanie h1 w poziomie */
+    max-width: 100%; /* Maksymalna szerokość h1 */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main {
+    position: relative; /* Dodano position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .main h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  
+
+
+h2 {
+    color: #9e40ff;
+    cursor: url('img/cursor/kursor2.png') 0 0, auto;
+    transition: 0.5s;
+}
+
+h2:hover {
+    text-shadow: 0 0 10px #9e40ff;
+}
+
+a {
+    color: #9e40ff;
+    text-decoration: none !important;
+    cursor: url('img/cursor/kursor2.png') 0 0, auto;
+    transition: 0.5s;
+    height: 45px; /* Dodane */
+    align-items: center; /* Dodane */
+    justify-content: center; /* Dodane */  
+}
+
+a:hover {
+    color: rgb(255, 243, 227);
+    text-shadow: 0 0 10px #9e40ff;
+}
+
+#underline {
+    padding-top: 7px;
+}
+
+#custom-text {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Kilo';
+    src: url("font/Kilo.otf") format("opentype");
+}
+
+#transition-bars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    z-index: 9999;
+    transition: transform 0.5s ease;
+}
+
+#scrollbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Wysokość paska przewijania */
+    background-color: rgba(255, 243, 227, 0);
+    z-index: 9999;
+}
+  
+#progressbar {
+    height: 100%;
+    background-color: #9e40ff; /* Kolor paska postępu */
+    width: 0;
+    filter: drop-shadow(0 0 5px #9e40ff);
+    border-radius: 5px;
+}
