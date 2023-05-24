@@ -21,7 +21,7 @@ TxtType.prototype.tick = function() {
     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
     var that = this;
-    var delta = 200 - Math.random() * 25; // prędkość pisania (mniej = szybciej / więcej = wolniej)
+    var delta = 100 - Math.random() * 25; // prędkość pisania (mniej = szybciej / więcej = wolniej)
 
     if (this.isDeleting) { delta /= 2; }
 
@@ -70,11 +70,11 @@ document.addEventListener('DOMContentLoaded', function(event) {
 });
 
 // Ustal domyślny tytuł
-var defaultTitle = 'w6keup';
+var defaultTitle = 'J. C.';
 
 // Funkcja do zmiany tytułu, gdy użytkownik opuszcza stronę
 function changeTitleOnBlur() {
-  document.getElementById('custom-title').innerText = 'Wróć na w6keup...';
+  document.getElementById('custom-title').innerText = 'Wróć do Chmarskiego...';
 }
 
 // Dodaj obsługę zdarzenia blur
@@ -85,17 +85,15 @@ window.addEventListener('focus', function() {
   document.getElementById('custom-title').innerText = defaultTitle;
 });
 
-// Funkcja do zmiany ikony skrótu, gdy użytkownik opuszcza stronę
-function changeShortcutIconOnBlur() {
+/*function changeShortcutIconOnBlur() {
   var shortcutIcon = document.querySelector('link[rel="shortcut icon"]');
   shortcutIcon.href = "img/wakeup-fav2.png";
-}
+}*/
 
-// Funkcja do przywracania domyślnej ikony skrótu po powrocie na stronę
-function restoreShortcutIconOnFocus() {
+/*function restoreShortcutIconOnFocus() {
   var shortcutIcon = document.querySelector('link[rel="shortcut icon"]');
   shortcutIcon.href = "img/wakeup-fav.png";
-}
+}*/
 
 // Dodaj obsługę zdarzenia blur dla ikony skrótu
 window.addEventListener('blur', changeShortcutIconOnBlur);
